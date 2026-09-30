@@ -10,7 +10,7 @@ export default function QR() {
   useEffect(() => { qrPng(url).then(setImg) }, [url])
   const btn = 'btn-ghost !min-h-0 !py-3 !text-base'
   return <Shell title="Scan to Share Your Photos" sub="Scan this code with your phone to upload and share your favourite wedding memories.">
-    {dev && <p className="max-w-xl mx-auto mb-4 rounded-xl bg-amber-50 text-amber-900 text-sm p-3">⚠️ This QR points to <b>{url}</b>, which is not your live website. Set <code>VITE_SITE_URL</code> to your production domain and redeploy before printing.</p>}
+    {dev && <p className="max-w-xl mx-auto mb-4 rounded-xl bg-amber-50 text-amber-900 text-sm p-3">⚠️ This QR points to <b>{url}</b> <code></code> </p>}
     <div className="grid md:grid-cols-2 gap-8 items-start">
       <div className="mx-auto w-full max-w-sm aspect-[210/297] rounded-lg bg-ivory border-[6px] border-double border-gold shadow-2xl p-6 flex flex-col items-center text-center text-sage-dark">
         <h2 className="text-2xl font-bold mt-4">CAPTURE THE MOMENTS</h2>
