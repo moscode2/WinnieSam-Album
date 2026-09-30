@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+@layer base{body{@apply bg-ivory text-ink font-sans antialiased}h1,h2,h3{@apply font-serif}}
+@layer components{
+ .btn{@apply inline-flex items-center justify-center rounded-full px-8 py-4 text-lg font-medium transition active:scale-95 disabled:opacity-50 disabled:pointer-events-none min-h-[56px]}
+ .btn-primary{@apply btn bg-sage-dark text-ivory shadow-lg shadow-sage/30 hover:bg-ink}
+ .btn-ghost{@apply btn border border-gold text-sage-dark bg-white/50 hover:bg-gold-soft/40}
+ .card{@apply rounded-3xl bg-white/80 shadow-xl shadow-gold/10 border border-gold-soft/60 p-6}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.rise{animation:rise .7s ease both}
