@@ -33,7 +33,7 @@ export default function Shell({ children, title, sub }: { children: ReactNode; t
         <p className="mt-1 tracking-normal">
           Developed by{' '}
           <a
-            href="https://mosdev-online-cv.vercel.app/"
+            href="https://moisesmoses.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-gold"
